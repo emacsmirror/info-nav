@@ -12,10 +12,7 @@
 
 *TODO*: Add Picture Here
 
-#+begin_quote
-[!TIP]
 I think this makes info manuals significantly more approachable, especially if one is not familiar with info's keybindings.
-#+end_quote
 
 * Installation
 ** MELPA
