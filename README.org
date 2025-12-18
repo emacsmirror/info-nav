@@ -4,7 +4,7 @@
 
 * About
 
-- This is an alternative to the info-dislplay-manual function.
+- This is an alternative to the [[https://www.gnu.org/software/emacs/manual/html_node/info/Create-Info-buffer.html][info-display-manual]] function (which is usually bound to ~C-h R~).
 - It also displays an info manual, but it uses two buffers and two windows to do so.
   + The left buffer contains the table of contents.
   + The right buffer contains the contents.
