@@ -1,0 +1,28 @@
+#+title: info-layout
+#+startup: indent show2levels
+#+filetags: :info:emacs:
+
+* About
+
+- This is an alternative to the info-dislplay-manual function.
+- It also displays an info manual, but it uses two buffers and two windows to do so.
+  + The left buffer contains the table of contents.
+  + The right buffer contains the contents.
+- Actions on the left will drive navigation on the right.
+
+*TODO*: Add Picture Here
+
+* Installation
+** MELPA
+
+#+begin_src elisp
+(use-package info-layout
+  :ensure t)
+#+end_src
+
+** Git
+
+#+begin_src elisp
+(use-package info-layout
+  :vc (:url "https://codeberg.org/ggxx/info-layout" :branch "master"))
+#+end_src
