@@ -10,7 +10,7 @@
   + The right window contains the contents.
 - Actions on the left will drive navigation on the right.
 
-[[./2025-12-18_15-37-05.screenshot.png][a 2 pane info layout]]
+[[./2025-12-18_15-37-05.screenshot.png]]
 
 I think this makes info manuals significantly more approachable, especially if one is not familiar with info's keybindings.
 
