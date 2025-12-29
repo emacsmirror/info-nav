@@ -6,8 +6,8 @@
 
 - This is an alternative to the [[https://www.gnu.org/software/emacs/manual/html_node/info/Create-Info-buffer.html][info-display-manual]] function (which is usually bound to ~C-h R~).
 - This also displays an info manual, but it uses two buffers and two windows to do so.
-  + The left window contains the table of contents.
-  + The right window contains the contents.
+- The left window contains the table of contents.
+- The right window contains the contents.
 - Actions on the left will drive navigation on the right.
 
 [[./2025-12-18_15-37-05.screenshot.png]]
@@ -37,4 +37,10 @@ Soon™
 
 *  Usage
 
+** C-h 3 $manual RET
+
 The recommended binding is ~C-h 3~.  The reason I chose this was because it reminds me of how ~C-x 3~ splits a window in half.  It's also likely to be free and unbound.
+
+** M-x info-layout $manual RET
+
+If you don't want to bind a key, you can just run it via ~M-x info-layout~.
