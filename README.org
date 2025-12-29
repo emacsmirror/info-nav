@@ -23,12 +23,18 @@ Soon™
 
 #+begin_src elisp
 (use-package info-layout
-  :ensure t)
+  :ensure t
+  :bind (("C-h 3" . info-layout)))
 #+end_src
 
 ** Git
 
 #+begin_src elisp
 (use-package info-layout
-  :vc (:url "https://codeberg.org/ggxx/info-layout" :branch "master"))
+  :vc (:url "https://codeberg.org/ggxx/info-layout" :branch "master")
+  :bind (("C-h 3" . info-layout)))
 #+end_src
+
+*  Usage
+
+The recommended binding is ~C-h 3~.  The reason I chose this was because it reminds me of how ~C-x 3~ splits a window in half.  It's also likely to be free and unbound.
