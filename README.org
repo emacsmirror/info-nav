@@ -37,10 +37,10 @@ Soon™
 
 *  Usage
 
-** C-h 3 $manual RET
+** =C-h 3=
 
 The recommended binding is ~C-h 3~.  The reason I chose this was because it reminds me of how ~C-x 3~ splits a window in half.  It's also likely to be free and unbound.
 
-** M-x info-layout $manual RET
+** =M-x info-layout=
 
 If you don't want to bind a key, you can just run it via ~M-x info-layout~.
