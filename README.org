@@ -1,4 +1,4 @@
-#+title: info-layout
+#+title: info-nav
 #+startup: indent show2levels
 #+filetags: :info:emacs:
 
@@ -22,17 +22,17 @@ I think this makes info manuals significantly more approachable, especially if o
 Soon™
 
 #+begin_src elisp
-(use-package info-layout
+(use-package info-nav
   :ensure t
-  :bind (("C-h 3" . info-layout)))
+  :bind (("C-h 3" . info-nav)))
 #+end_src
 
 ** Git
 
 #+begin_src elisp
-(use-package info-layout
-  :vc (:url "https://codeberg.org/ggxx/info-layout" :branch "master")
-  :bind (("C-h 3" . info-layout)))
+(use-package info-nav
+  :vc (:url "https://codeberg.org/ggxx/info-nav" :branch "master")
+  :bind (("C-h 3" . info-nav)))
 #+end_src
 
 *  Usage
@@ -41,6 +41,6 @@ Soon™
 
 The recommended binding is ~C-h 3~.  The reason I chose this was because it reminds me of how ~C-x 3~ splits a window in half.  It's also likely to be free and unbound.
 
-** =M-x info-layout=
+** =M-x info-nav=
 
-If you don't want to bind a key, you can just run it via ~M-x info-layout~.
+If you don't want to bind a key, you can just run it via ~M-x info-nav~.
