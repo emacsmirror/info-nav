@@ -167,8 +167,10 @@ Intercept RET and use `info-nav--go' insetad when appropriate."
   "Advise `consult-info--position' taking ORIG and ARGS.
 Make `consult-info' behave correctly in an `info-nav' context."
   (let* ((candidate (car args)))
-    (pcase (consult-info--position candidate)
-      (`( ,_matches ,pos ,node ,_bol ,_buf)
+    (pcase (consult-info--position candidate) ; I'm aware of this flycheck warning.
+                                              ; I'm only applying this advice when
+                                              ; I know consult is loaded.
+      (`( ,_matches ,_pos ,node ,_bol ,_buf)
        (message "node %s" node)
        (cond
         (info-nav--is-toc
@@ -192,16 +194,12 @@ Make `consult-info' behave correctly in an `info-nav' context."
  :around
  #'info-nav--keyboard-advice)
 
-(advice-add
- #'consult-info--action
- :around
- #'info-nav--consult-advice)
-
-(when nil
-  ;;;; This is the keybinding I use.
-  ;;;; I think of it like `C-x 3' but for info.
-  (keymap-global-set "C-h 3" #'info-nav)
-  )
+;; I'm only applying this advice when the function exists.
+(when (fboundp 'consult-info--action)
+  (advice-add
+   #'consult-info--action
+   :around
+   #'info-nav--consult-advice))
 
 (provide 'info-nav)
 ;;; info-nav.el ends here.
