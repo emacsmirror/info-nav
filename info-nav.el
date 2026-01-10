@@ -1,4 +1,10 @@
 ;;; info-nav.el --- Browse info docs with a 2 pane layout  -*- lexical-binding: t; -*-
+
+;; Author: ggxx
+;; URL: https://codeberg.org/ggxx/info-nav
+;; Keywords: docs, hypermedia
+;; Package-Version: 1.0.0
+
 ;;; Commentary:
 ;;
 ;;  Usage:  M-x info-nav RET elisp RET
