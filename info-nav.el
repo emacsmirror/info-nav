@@ -168,22 +168,14 @@ Intercept RET and use `info-nav--go' insetad when appropriate."
   "Advise `consult-info--position' taking ORIG and ARGS.
 Make `consult-info' behave correctly in an `info-nav' context."
   (let* ((candidate (car args)))
-    (pcase (consult-info--position candidate) ; I'm aware of this flycheck warning.
-                                              ; I'm only applying this advice when
-                                              ; I know consult is loaded.
-      (`( ,_matches ,_pos ,node ,_bol ,_buf)
-       (message "node %s" node)
-       (cond
-        (info-nav--is-toc
-         (progn
-           (windmove-right)
-           (Info-goto-node node)))
-        (info-nav--is-content
-         (progn
-           (Info-goto-node node)))
-        (t
-         (progn
-           (apply orig args))))))))
+    (when (functionp 'consult-info--position)
+      (pcase (consult-info--position candidate)
+        (`( ,_matches ,_pos ,node ,_bol ,_buf)
+         (message "node %s" node)
+         (cond
+          (info-nav--is-toc (progn (windmove-right) (Info-goto-node node)))
+          (info-nav--is-content (progn (Info-goto-node node)))
+          (t (progn (apply orig args)))))))))
 
 (advice-add
  #'Info-mouse-follow-nearest-node
