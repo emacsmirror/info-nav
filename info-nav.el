@@ -1,9 +1,9 @@
 ;;; info-nav.el --- Browse info docs with a 2 pane layout  -*- lexical-binding: t; -*-
 
-;; Author: ggxx
+;; Author: ggxx <https://codeberg.org/ggxx>
 ;; URL: https://codeberg.org/ggxx/info-nav
 ;; Keywords: docs, hypermedia
-;; Package-Version: 1.0.2
+;; Package-Version: 1.0.3
 ;; Package-Requires: ((emacs "29.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
