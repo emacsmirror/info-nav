@@ -194,5 +194,13 @@ Make `consult-info' behave correctly in an `info-nav' context."
    :around
    #'info-nav--consult-advice))
 
+(defun info-nav-unload-feature ()
+  "Remove advice before the unload happens."
+  (message "removing advice for info-nav")
+  (advice-remove #'Info-mouse-follow-nearest-node #'info-nav--mouse-advice)
+  (advice-remove #'Info-follow-nearest-node #'info-nav--keyboard-advice)
+  (when (fboundp 'consult-info--action)
+    (advice-remove #'consult-info--action #'info-nav--consult-advice)))
+
 (provide 'info-nav)
 ;;; info-nav.el ends here.
