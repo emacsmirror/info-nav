@@ -19,7 +19,7 @@ I think this makes info manuals significantly more approachable, especially if o
 * Installation
 ** MELPA
 
-Soon™
+[[https://github.com/melpa/melpa/pull/9778][Soon™]]
 
 #+begin_src elisp
 (use-package info-nav
