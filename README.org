@@ -31,7 +31,7 @@ Soon™
 
 #+begin_src elisp
 (use-package info-nav
-  :vc (:url "https://codeberg.org/ggxx/info-nav" :branch "master")
+  :vc (:url "https://codeberg.org/ggxx/info-nav" :rev :newest)
   :bind (("C-h 3" . info-nav)))
 #+end_src
 
