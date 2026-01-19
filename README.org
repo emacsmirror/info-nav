@@ -2,6 +2,8 @@
 #+startup: indent show2levels
 #+filetags: :info:emacs:
 
+[[https://melpa.org/#/info-nav][file:https://melpa.org/packages/info-nav-badge.svg]]
+
 * About
 
 - This is an alternative to the [[https://www.gnu.org/software/emacs/manual/html_node/info/Create-Info-buffer.html][info-display-manual]] function (which is usually bound to ~C-h R~).
