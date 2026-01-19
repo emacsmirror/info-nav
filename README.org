@@ -2,7 +2,9 @@
 #+startup: indent show2levels
 #+filetags: :info:emacs:
 
-[[https://melpa.org/#/info-nav][file:https://melpa.org/packages/info-nav-badge.svg]]
+#+begin_export html
+<a href="https://melpa.org/#/info-nav"><img alt="MELPA" src="https://melpa.org/packages/info-nav-badge.svg"/></a>
+#+end_export
 
 * About
 
