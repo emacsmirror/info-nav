@@ -39,7 +39,7 @@ I think this makes info manuals significantly more approachable, especially if o
   :bind (("C-h 3" . info-nav)))
 #+end_src
 
-*  Usage
+* Usage
 
 ** =C-h 3=
 
@@ -48,3 +48,10 @@ The recommended binding is ~C-h 3~.  The reason I chose this was because it remi
 ** =M-x info-nav=
 
 If you don't want to bind a key, you can just run it via ~M-x info-nav~.
+
+* A Special Message for Unix Philosophers
+
+- What if you love the command line and don't use Emacs, but you still want to read info documents?
+- Check out [[https://codeberg.org/ggxx/nfo][nfo]].
+  + It is a CLI tool that uses Emacs as a user-friendly replacement for the terminal =info= program.
+  + I made for people who don't even like Emacs but want to read some docs.
