@@ -18,7 +18,8 @@
 
 #+begin_export html
 <video controls>
-  <source src="https://codeberg.org/ggxx/info-nav/raw/branch/master/info-nav.webm" type="video/webm" />
+  <source src="/ggxx/info-nav/raw/branch/master/info-nav.webm" type="video/webm" />
+  <a href="/ggxx/info-nav/raw/branch/master/info-nav.webm">info-nav.webm</a>
 </video>
 #+end_export
 
