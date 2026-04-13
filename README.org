@@ -16,18 +16,6 @@
 
 [[./2025-12-18_15-37-05.screenshot.png]]
 
-[[./info-nav.webm]]
-(Right-click to show video controls for now.)
-
-#+begin_export html
-<!--
-<video controls>
-  <source src="/ggxx/info-nav/raw/branch/master/info-nav.webm" type="video/webm" />
-  <a href="/ggxx/info-nav/raw/branch/master/info-nav.webm">info-nav.webm</a>
-</video>
--->
-#+end_export
-
 #+begin_quote
 I think this makes info manuals significantly more approachable, especially if one is not familiar with info's keybindings.
 #+end_quote
