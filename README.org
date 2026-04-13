@@ -18,6 +18,7 @@
 
 #+begin_quote
 I think this makes info manuals significantly more approachable, especially if one is not familiar with info's keybindings.
+Navigation can be completely mouse-driven, so you don't even need to know any keybindings.
 #+end_quote
 
 * Installation
